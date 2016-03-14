@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:context=".ui.BaseVideoActivity"
+    android:background="?attr/colorPrimary">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/userIcon"
+            android:layout_marginLeft="70dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            app:roundAsCircle="true"
+            app:placeholderImage="@mipmap/ic_account_circle_gray_48dp"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:paddingTop="8dp"
+            android:layout_toRightOf="@id/userIcon"
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"/>
+        <ImageView
+            android:id="@+id/img_visibility"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/userName"
+            android:layout_toRightOf="@id/userIcon"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@mipmap/ic_visibility_white_24dp"/>
+        <TextView
+            android:id="@+id/visibility_txt"
+            android:paddingTop="1dp"
+            android:paddingLeft="5dp"
+            android:layout_below="@id/userName"
+            android:layout_toRightOf="@id/img_visibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="0"/>
+    </RelativeLayout>
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/videoVitamio"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:id="@+id/explain_txt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:maxLines="2"
+        android:padding="10dp"
+        android:text="name"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

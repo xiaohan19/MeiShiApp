@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/userIcon_comment"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:roundAsCircle="true"
+                app:placeholderImage="@mipmap/ic_account_circle_gray_48dp"/>
+            <TextView
+                android:paddingLeft="5dp"
+                android:paddingTop="9dp"
+                android:id="@+id/userName_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:layout_toRightOf="@id/userIcon_comment"/>
+            <TextView
+                android:id="@+id/comment_txt"
+                android:paddingTop="15dp"
+                android:layout_below="@id/userIcon_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论内容 ...."
+                android:textColor="@android:color/black"/>
+            <CheckBox
+                android:layout_below="@id/comment_txt"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@mipmap/ic_thumb_up_gray_18dp"
+                android:text="赞"
+                android:textColor="@android:color/darker_gray"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

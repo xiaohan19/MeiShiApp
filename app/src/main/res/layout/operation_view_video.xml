@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <CheckBox
+        style="@style/TitleVideoCheckBox"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_communication_message_18dp"
+        android:gravity="center" />
+
+
+
+    <CheckBox
+        style="@style/TitleVideoCheckBox"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_repeat_white_18dp"
+        android:gravity="center" />
+
+
+    <CheckBox
+        style="@style/TitleVideoCheckBox"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_thumb_up_white_18dp"
+        android:gravity="center" />
+</RelativeLayout>
