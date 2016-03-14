@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity
     private List<Fragment> fragments = new ArrayList<>();
     private TabLayout tab;
     private ViewPager pager;
+    //
     TabPagerAdapter tabPagerAdapter;
 
     @Override
